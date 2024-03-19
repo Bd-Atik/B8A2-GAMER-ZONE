@@ -1,0 +1,263 @@
+/* work sans font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* shared styles */
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+section {
+    padding: 0 10rem;
+}
+
+.btn-primary {
+    border-radius: 40px;
+    color: #FFF;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    background: #FF42A5;
+    padding: 18px 35px;
+    color: #FFF;
+    cursor: pointer;
+    border: 0;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.text-light-gray {
+    color: #727272;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* header styles */
+header {
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    height: 6.25rem;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 40px;
+}
+
+.nav-title strong {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-title>img {
+    width: 60px;
+    height: 30px;
+}
+
+
+
+nav>ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 2rem;
+    list-style: none;
+    color: #3C354F;
+    text-align: center;
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+nav li>button {
+    padding: 0rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    border: 0;
+    background: rgba(11, 2, 35, 0.10);
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+nav li>button p {
+    display: flex;
+    align-items: center;
+    gap: 0.63rem;
+}
+
+nav .bxl-youtube {
+    color: red;
+    font-size: 1.87rem;
+}
+
+nav .bxl-tiktok {
+    color: #000000;
+    font-size: 1.87rem;
+}
+
+/* banner style start */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-title {
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-head {
+    margin-top: -50px;
+    font-size: 5.62rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-service {
+    margin-top: -40px;
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.play-service p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.play-service i {
+    font-size: 1.38rem;
+    color: #F948B2;
+}
+
+.banner img {
+    width: 55%;
+    height: 100%;
+}
+
+.banner-btn .second {
+    background: #4EC5F7;
+    margin-left: 1.25rem;
+}
+
+/* main section styles */
+
+/* we are gamer section styles */
+.we-r-gamer {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.we-r-gamer img {
+    width: 650px;
+}
+
+.gamer-content p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.gamer-content h4 {
+    margin-top: 25px;
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.gamer-content h3 {
+    margin-top: -25px;
+    color: #534C64;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+/* responsive media queries */
+
+/* mobile devices */
+@media screen and (max-width: 576px) {
+
+    nav,
+    .banner {
+        padding: 10px;
+    }
+
+    nav,
+    nav>ul,
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        margin-top: 100px;
+        flex-direction: row-reverse;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner .play-service p {
+        align-items: center;
+    }
+
+    .feature-img img {
+        width: 90%;
+        margin-left: 0;
+    }
+
+
+}
+
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav,
+    .features,
+    .teams-container,
+    .sponsors-img-container {
+        flex-direction: column;
+    }
+}
